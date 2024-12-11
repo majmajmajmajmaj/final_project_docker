@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 import './Home.css';
 
@@ -57,6 +58,9 @@ const Home = () => {
                                 value={password}
                                 onChange={(event) => setPassword(event.target.value)}
                             />
+                        </li>
+                        <li>
+                            <Link to="/myPastes">List all the pastes</Link>
                         </li>
                     </ul>
                 </div>

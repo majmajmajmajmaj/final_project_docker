@@ -5,6 +5,7 @@ import Home from '../Home/Home';
 import Paste from '../Paste/Paste';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
+import MyPastes from '../MyPastes/MyPastes';
 import './App.css';
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/:link" element={<Paste />} />
+          <Route path="/myPastes" element={<MyPastes />} />
         </Routes>
         <Footer />
       </div>
