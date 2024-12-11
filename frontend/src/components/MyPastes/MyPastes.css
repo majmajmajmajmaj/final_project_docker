@@ -1,0 +1,27 @@
+.my-pastes {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .my-pastes h1 {
+    margin-bottom: 20px;
+  }
+  
+  .my-pastes ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .my-pastes li {
+    margin: 10px 0;
+  }
+  
+  .my-pastes a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .my-pastes a:hover {
+    text-decoration: underline;
+  }
+  
