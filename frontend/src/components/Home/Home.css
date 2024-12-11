@@ -1,0 +1,125 @@
+.main-container {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .editor-section {
+    flex: 1;
+    display: flex;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .additional-settings {
+    width: 25%;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+  }
+  
+  .additional-settings h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .additional-settings ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .additional-settings ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .editor-container {
+    width: 75%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  
+  .editor-toolbar {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .editor-toolbar .editor-btn {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .editor-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .editor {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .publish {
+    align-self: flex-end;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .link-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .link-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .shareable-link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .shareable-link:hover {
+    text-decoration: underline;
+  }
+  
+  .copy-btn {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .copy-btn:hover {
+    background-color: #45a049;
+  }

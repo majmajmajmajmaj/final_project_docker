@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    height: 60px;
+  }
+  
+  header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  header .logo a {
+    color: white;
+  }
+  
+  header nav .btn {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  header nav .btn.add-note {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  header nav .btn.premium {
+    background-color: gold;
+    color: black;
+  }
