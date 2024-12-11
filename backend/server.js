@@ -16,7 +16,7 @@ const PORT = 5000;
 app.use(bodyParser.json());
 app.use(cors());
 
-mongoose.connect('mongodb://mongo:27017/pastebin', {
+mongoose.connect('mongodb://localhost:27017/pastebin', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => {
@@ -37,7 +37,7 @@ app.post('/api/paste', async (req, res) => {
   const link = nanoid(10);
   const newPaste = new Paste({ text, link, password: hashedPassword });
   await newPaste.save();
-  res.json({ link: `http://localhost:4000/${link}` });
+  res.json({ link: `http://localhost:3000/${link}` });
 });
 
 app.get('/:link', async (req, res) => {
@@ -66,6 +66,17 @@ app.post('/:link', async (req, res) => {
     res.status(404).json({ error: 'Paste not found' });
   }
 });
+
+
+app.get('/api/pastes', async (req, res) => {
+  try {
+    const pastes = await Paste.find({}, 'link');
+    res.json(pastes);
+  } catch (error) {
+    res.status(500).json({ error: 'Error au moment de fetch les pastes' });
+  }
+});
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
