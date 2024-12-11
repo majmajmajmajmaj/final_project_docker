@@ -46,10 +46,26 @@ app.get('/:link', async (req, res) => {
   if (paste) {
     res.json(paste);
   } else {
-    res.status(404).json({ error: 'Paste non trouvé' });
+    res.status(404).json({ error: 'Paste not found' });
   }
 });
 
+app.post('/:link', async (req, res) => {
+  const { link } = req.params;
+  const { password } = req.body;
+  const paste = await Paste.findOne({ link });
+  if (paste) {
+    if (paste.password) {
+      const match = await bcrypt.compare(password, paste.password);
+      if (!match) return res.status(401).json({ error: 'Invalid password' });
+      res.json(paste);
+    } else {
+      res.json(paste);
+    }
+  } else {
+    res.status(404).json({ error: 'Paste not found' });
+  }
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
