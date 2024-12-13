@@ -77,6 +77,20 @@ app.get('/api/pastes', async (req, res) => {
   }
 });
 
+app.delete('/api/pastes/:link', async (req, res) => {
+  const { link } = req.params;
+  try {
+    const result = await Paste.deleteOne({ link });
+    if (result.deletedCount === 0) {
+      return res.status(404).json({ error: 'Paste not found' });
+    }
+    res.json({ message: 'Paste supprimé avec success!!' });
+  } catch (error) {
+    res.status(500).json({ error: 'Error' });
+  }
+});
+
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
