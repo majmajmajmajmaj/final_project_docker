@@ -73,7 +73,7 @@ L'application suit une architecture en trois couches : **frontend**, **backend**
 3. **Lister et supprimer un paste** :
    - Cliquez sur l'onglet **List All Pastes** pour consulter tous vos pastes. 
    - Dans la liste, cliquez sur l'icône de suppression à côté du paste souhaité.  
-   ![Supprimer un paste](assets/delete_paste.png)
+   ![Supprimer un paste](assets/etape4.png)
 
 ---
 
