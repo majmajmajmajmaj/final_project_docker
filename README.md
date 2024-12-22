@@ -60,17 +60,20 @@ L'application suit une architecture en trois couches : **frontend**, **backend**
 
 ## **🚀 Utilisation**
 
-Voici comment utiliser **Quick Past** :
+1. **Créer un paste** :  
+   - Écrivez un texte ou du code.  
+   - Cliquez sur le bouton **Upload** pour générer un lien.  
+   ![Créer un paste](assets/etape1.png)
+   ![Créer un paste](assets/etape2.png)
 
-1. **Création d'un paste** :  
-   - Écrivez un texte ou du code dans le formulaire prévu à cet effet.
-   - Cliquez sur le bouton **Upload**.
-   - Un lien unique sera généré que vous pourrez partager avec vos amis ou collègues.
+2. **Consulter un paste** :  
+   - Cliquez sur le lien.  
+   ![Créer un paste](assets/etape3.png)
 
-2. **Liste de vos pastes** :  
-   - Accédez à l'onglet **List All Pastes**.
-   - Vous y trouverez tous les liens que vous avez créés.
-   - Vous avez la possibilité de consulter ou supprimer un paste.
+3. **Lister et supprimer un paste** :
+   - Cliquez sur l'onglet **List All Pastes** pour consulter tous vos pastes. 
+   - Dans la liste, cliquez sur l'icône de suppression à côté du paste souhaité.  
+   ![Supprimer un paste](assets/delete_paste.png)
 
 ---
 
