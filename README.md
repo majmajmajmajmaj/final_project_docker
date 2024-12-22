@@ -58,6 +58,22 @@ L'application suit une architecture en trois couches : **frontend**, **backend**
 
 ---
 
+## **🚀 Utilisation**
+
+Voici comment utiliser **Quick Past** :
+
+1. **Création d'un paste** :  
+   - Écrivez un texte ou du code dans le formulaire prévu à cet effet.
+   - Cliquez sur le bouton **Upload**.
+   - Un lien unique sera généré que vous pourrez partager avec vos amis ou collègues.
+
+2. **Liste de vos pastes** :  
+   - Accédez à l'onglet **List All Pastes**.
+   - Vous y trouverez tous les liens que vous avez créés.
+   - Vous avez la possibilité de consulter ou supprimer un paste.
+
+---
+
 ## **⚙️ Installation et Exécution**
 
 ### **1 Pré-requis**
