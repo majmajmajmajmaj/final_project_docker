@@ -16,7 +16,7 @@ const PORT = 5000;
 app.use(bodyParser.json());
 app.use(cors());
 
-mongoose.connect('mongodb://localhost:27017/pastebin', {
+mongoose.connect('mongodb://mongo:27017/pastebin', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => {
@@ -37,7 +37,7 @@ app.post('/api/paste', async (req, res) => {
   const link = nanoid(10);
   const newPaste = new Paste({ text, link, password: hashedPassword });
   await newPaste.save();
-  res.json({ link: `http://localhost:3000/${link}` });
+  res.json({ link: `http://localhost:80/${link}` });
 });
 
 app.get('/:link', async (req, res) => {
