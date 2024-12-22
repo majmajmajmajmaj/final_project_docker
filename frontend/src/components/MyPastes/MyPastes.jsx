@@ -41,11 +41,11 @@ const MyPastes = () => {
         {pastes.map((paste, index) => (
           <li key={index}>
             <a
-              href={`http://localhost:3000/${paste.link}`}
+              href={`http://localhost:80/${paste.link}`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              {`http://localhost:3000/${paste.link}`}
+              {`http://localhost:80/${paste.link}`}
             </a>
             <button
               className="delete-btn"
